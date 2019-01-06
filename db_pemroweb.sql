@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 06 Jan 2019 pada 10.40
+-- Waktu pembuatan: 06 Jan 2019 pada 11.07
 -- Versi server: 10.1.35-MariaDB
 -- Versi PHP: 7.2.9
 
@@ -41,11 +41,8 @@ CREATE TABLE `t_blog` (
 --
 
 INSERT INTO `t_blog` (`id`, `judul`, `isi`, `waktu`, `tag`) VALUES
-(2, 'Judul Kedua', 'Isi Kedua Blog', '2018-12-26 21:11:00', 'Game'),
-(3, 'Virhan', 'Ali', '2018-12-27 11:13:26', 'Kimia'),
-(5, 'Hameini', 'Ini Nama Virhan ', '2018-12-27 12:19:48', 'Nama'),
-(6, 'Alay', 'ASeeekkk ', '2019-01-05 15:13:10', 'Bebas'),
-(7, 'aaaa', ' aaaaaa', '2019-01-05 15:24:32', 'aaaaaaa');
+(8, 'Mobile Legend masuk list Sea G', ' Kabar Terbaru dari pergelaran sea game 2019, bahwa mobile legend masuk list dalam kategori esport', '2019-01-06 10:04:59', 'Gaming'),
+(9, 'Spesifikasi Xiaomi Mi 9: Smart', ' Spesifikasi Xiaomi Mi 9 kini sudah merebak. Bocoran spesifikasinya bermunculan di internet.\r\n\r\nXiaomi Mi 9 nampaknya akan rilis tak lama lagi. Smartphone ini diyakini akan menjadi hape kedua dari Xiaomi yang menggunakan Snapdragon 855 selain Mi Mix 3 Edisi 5G.\r\n\r\nSmartphone Xiaomi Mi 9 juga diyakini sebagai hape yang dipersiapkan oleh Xiaomi untuk menggunakan kamera 48 MP.\r\n\r\nPerlu diketahui, bahwa dari akhir tahun 2018 sudah beredar kabar bahwa Xiaomi akan merilis hape dengan kamera 48 MP.\r\n\r\n', '2019-01-06 10:06:34', 'Xiaomi');
 
 -- --------------------------------------------------------
 
@@ -66,7 +63,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `username`, `password`, `status`) VALUES
 (4, 'lava', '123', 1),
-(5, 'arch', '123', 0);
+(7, 'virhan', '123', 1);
 
 --
 -- Indexes for dumped tables
@@ -92,13 +89,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT untuk tabel `t_blog`
 --
 ALTER TABLE `t_blog`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
