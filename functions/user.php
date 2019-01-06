@@ -1,5 +1,13 @@
 <?php
 
+function register_user($nama, $pass){
+  $nama = escape($nama);
+  $pass = escape($pass);
+
+  $query = "INSERT INTO users (username, password, status) VALUES ('$nama', '$pass', 1)";
+  return run($query);
+}
+
 function cek_data($nama, $pass){
  $nama = escape($nama);
  $pass = escape($pass);

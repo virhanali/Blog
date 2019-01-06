@@ -14,10 +14,10 @@ if(isset($_POST['submit'])){
 
   if(!empty(trim($nama)) && !empty(trim($pass))){
       $_SESSION['user'] = $nama;
-    if(cek_data($nama, $pass)){
+    if(register_user($nama, $pass)){
         header('Location: index.php');
     }else{
-        $error = 'ada masalah saat login';
+        $error = 'ada masalah saat daftar';
     }
 
   }else{
@@ -29,14 +29,14 @@ if(isset($_POST['submit'])){
 
  <html>
    <head>
-     <title>Halaman Login Blog Sistem Informasi</title>
+     <title>Halaman Daftar Blog Sistem Informasi</title>
      <link rel="stylesheet" href="style.css">
    </head>
  <body>
    <div class="konten">
        <div class="kepala">
            <div class="lock"></div>
-           <h2 class="judul">Login ke Blog ?</h2>
+           <h2 class="judul">Daftar Jadi Member ?</h2>
        </div>
    <div class="artikel">
      <form action="" method="post">
@@ -53,9 +53,9 @@ if(isset($_POST['submit'])){
        <div id="error"><?=$error ?></div>
 
      <div class="grup">
-     <input type="submit" name="submit" value="Masuk">
+     <input type="submit" name="submit" value="Daftar">
      <div id="sign">
-     <a href="register.php">Sign Up ?</a>
+     <a href="login.php">Sudah jadi member ?</a>
     </div>
 
     </div>
