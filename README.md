@@ -1,2 +1,2 @@
-# project1
-Tugas Besar Pemograman Web Sem 3
+# blog
+Tugas Besar Pemograman Web Semester 3
